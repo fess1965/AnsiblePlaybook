@@ -1,0 +1,8 @@
+- hosts: zabbix_server50_cent8
+  remote_user: fess
+  become: yes
+  become_user: root
+  vars_files:
+    - vars/common.yml
+  roles:
+    - zabbix-server_ver50_cent8
